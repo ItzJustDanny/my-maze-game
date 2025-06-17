@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; /* This is crucial for positioning #startText relative to the body */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#myCanvas {
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+    width: 600px;
+    height: 720px;
+    margin-top: 20px;
+}
+
+.gameContainer {
+    width: 600px;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    background-color: #000000;
+    border: 3px solid #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.move-counter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    min-width: 150px;
+}
+
+.move-counter span {
+    color: #ffffff;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffda44;
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #ffda44;
+    text-align: center;
+    min-width: 120px;
+    box-shadow: 0 0 15px rgba(255, 218, 68, 0.5);
+}
+
+#Restart {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffda44;
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #ffda44;
+    min-width: 120px;
+    box-shadow: 0 0 15px rgba(255, 218, 68, 0.5);
+    cursor: pointer;
+}
+
+#startText {
+    position: absolute; /* Position relative to the nearest positioned ancestor (the body) */
+    top: 93%; /* Adjust as needed: distance from the bottom */
+    left: 70%;  /* Adjust as needed: distance from the right */
+    color: #0000ff; /* Dark blue color */
+    font-size: 3em; /* Make it noticeable */
+    font-weight: bold;
+    z-index: 10; /* Ensure it's above other content if anything overlaps */
+}
